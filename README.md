@@ -9,18 +9,13 @@ The server is coded in Rust using [tokio](https://tokio.rs/). The client is buil
 
 # How to run
 
-First, install the rust dependencies
+To start the TCP server, do
 
 ```
 cd Server
-cargo install
-```
-
-Now, to start the TCP server, do
-
-```
 cargo run
 ```
+
 For starting the python client, do
 
 ```
