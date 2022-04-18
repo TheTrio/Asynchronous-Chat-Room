@@ -33,8 +33,9 @@ async fn main() {
                     }
                     result = rx.recv() => {
                         let (msg, address) = result.unwrap();
+                        let output_message = format!("{address}-{msg}");
                         if address!=addr{
-                            writer.write_all(msg.as_bytes()).await.unwrap();
+                            writer.write_all(output_message.as_bytes()).await.unwrap();
                         }
                     }
                 }
