@@ -20,5 +20,7 @@ For starting the python client, do
 
 ```
 cd Client
+poetry install
+poetry shell
 python client.py
 ```
