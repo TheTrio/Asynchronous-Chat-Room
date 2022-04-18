@@ -21,7 +21,7 @@ For starting the python client, do
 
 ```
 cd Client
-poetry install
+poetry install --no-dev
 poetry shell
 python client.py
 ```
